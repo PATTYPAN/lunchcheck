@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>消費金額計算</title>
+    <link rel="stylesheet" href="stylesheet_lunch.css">
+  </head>
+  <body>
+    <h1 class="title">ランチ調査</h1>
+    <h2 class="sale">5000円以上は20%OFF</h2>
+    <p calss="name">名前</p>
+    <input type="text" id="input-name" class="NameInput">
+    <p calss="name">ハンバーグ　100円</p>
+    <input type="number" id="input-ham" class="NumInput" min="0" value="0">
+    <p calss="name">ドリンク　50円</p>
+    <input type="number" id="input-drink" class="NumInput" min="0" value="0">
+    <input type = "button" id="add" class="sendBtn" value = "追加">
+    <p id="no_num" class="no_num"></p>
+    <p></p>
+    <input type = "button" id="delete" class="deleteBtn" value = "削除">
+    <input type = "button" id="select_all" class="select_all" value = "全選択">
+
+    <table style="width:100%"　id="totalList" class="totalList">
+      <caption>統計表</caption>
+      <tr>
+        <th>選択</th>
+        <th>名前</th>
+        <th>ハンバーグ</th>
+        <th>ドリンク</th>
+        <th>金額</th>
+      </tr>
+    </table>
+    <p class="sum_price">合計：0円</p>
+
+    <input type="submit" value="送信">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="lunch.js"></script>
+
+  </body>
+</html>
